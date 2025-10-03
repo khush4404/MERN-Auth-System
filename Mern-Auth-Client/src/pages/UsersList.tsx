@@ -331,7 +331,7 @@ export const UserList = () => {
                                     <td className="flex-[0_0_140px] md:flex-[0_0_150px] px-3 md:px-6 py-2 md:py-2">
                                         {user.imgUrl ? (
                                             <img
-                                                src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}merndemo/users/${user.imgUrl}`}
+                                                src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}${user.imgUrl}`}
                                                 alt="User"
                                                 className="w-8 h-8 rounded-sm object-cover border border-blue-400 group-hover:border-gray-500 dark:group-hover:border-primary transition-colors duration-300"
                                             />

@@ -42,7 +42,7 @@ export const EditProfile = () => {
                 setValue("phoneNo", phoneNo);
                 setValue("location", location);
                 if (imgUrl) {
-                    setPreviewUrl(`${import.meta.env.VITE_TEBI_PUBLIC_URL}merndemo/users/${imgUrl}`);
+                    setPreviewUrl(`${import.meta.env.VITE_TEBI_PUBLIC_URL}${imgUrl}`);
                 }
             } catch {
                 toast.error("Failed to load profile");

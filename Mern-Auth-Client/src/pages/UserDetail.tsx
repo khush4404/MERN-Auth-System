@@ -90,7 +90,7 @@ export const UserDetail = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img
-                            src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}merndemo/users/${curUser?.imgUrl}`}
+                            src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}${curUser?.imgUrl}`}
                             alt="Full Image"
                             className="max-w-full max-h-[80vh] object-contain rounded-lg"
                         />
@@ -118,7 +118,7 @@ export const UserDetail = () => {
                         {curUser.imgUrl ? (
                             <>
                                 <img
-                                    src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}merndemo/users/${curUser.imgUrl}`}
+                                    src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}${curUser.imgUrl}`}
                                     alt="User"
                                     className="sm:w-28 w-14 h-14 sm:h-28 rounded-full object-cover border border-blue-400 cursor-pointer transition-all"
                                     onClick={() => setIsImageOpen(true)}

@@ -311,7 +311,7 @@ const Navbar = () => {
                                 <div className="flex items-center gap-3 border-t border-btnGrFromLight dark:border-darkBorder pt-4 sticky bottom-0 bg-white dark:bg-primaryBg justify-between">
                                     {user.imgUrl ? (
                                         <img
-                                            src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}merndemo/users/${user.imgUrl}`}
+                                            src={`${import.meta.env.VITE_TEBI_PUBLIC_URL}${user.imgUrl}`}
                                             alt={`${user.firstName} ${user.lastName}`}
                                             className="w-10 h-10 rounded-full object-cover border border-blue-400"
                                         />
